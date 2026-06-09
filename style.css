@@ -1807,3 +1807,24 @@ code {
     font-size: 0.5rem;
   }
 }
+
+/* ============================================
+   MOBILE RESPONSIVE FIXES 
+   ============================================ */
+@media (max-width: 768px) {
+  /* Fixes the "LINK START" intro screen overlay sizing */
+  .link-text {
+    font-size: 1.6rem !important;      /* Forces a clear text size on phone viewports */
+    letter-spacing: 0.12em !important;  /* Prevents text from expanding off-screen */
+  }
+
+  .link-content {
+    padding: 0 1.5rem !important;       /* Adds side breathing room */
+  }
+
+  /* Ensures the iframe trailer container changes aspect ratios accurately */
+  #trailerFrame {
+    width: 92vw !important;             /* Spans beautifully across mobile screen widths */
+    height: 51.75vw !important;         /* Hard-locks the element to a clean 16:9 cinematic ratio */
+  }
+}
